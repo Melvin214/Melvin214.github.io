@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujeres de Oración</title>
+
+  <style>
+    :root{
+      --pink-1:#f8cce0;
+      --pink-2:#f3a6c8;
+      --wine:#8a2d5c;
+      --bg:#ffffff;
+      --card:#faf0f5;
+      --text:#333;
+      --muted:#6b6b6b;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family: Georgia, serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    header{
+      background: linear-gradient(180deg, var(--pink-1), #fff);
+      padding: 36px 16px 26px;
+      text-align:center;
+    }
+
+    .logo{
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      object-fit:cover;
+      border:6px solid #fff;
+      box-shadow:0 10px 26px rgba(0,0,0,0.12);
+      margin-bottom:14px;
+    }
+
+    header h1{
+      margin:10px 0 6px;
+      color:var(--wine);
+      font-size:2.2rem;
+    }
+
+    header p{
+      margin:0;
+      color:#5a1f3c;
+      font-size:1.05rem;
+    }
+
+    .container{
+      max-width:980px;
+      margin:auto;
+      padding:28px 16px 46px;
+    }
+
+    .section{
+      margin:28px 0;
+      padding:22px 18px;
+      background:#fff;
+      border-radius:14px;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 22px rgba(0,0,0,0.05);
+    }
+
+    h2{
+      color:var(--wine);
+      border-bottom:2px solid var(--pink-2);
+      padding-bottom:10px;
+      margin:0 0 14px;
+      font-size:1.4rem;
+    }
+
+    .small{
+      font-size:0.95rem;
+      color:var(--muted);
+    }
+
+    .verse{
+      background:var(--card);
+      padding:16px;
+      border-left:5px solid var(--pink-2);
+      border-radius:10px;
+      font-style:italic;
+      margin-top:14px;
+    }
+
+    .btn-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:bold;
+      text-decoration:none;
+      border:1px solid rgba(0,0,0,0.10);
+    }
+
+    .btn-primary{ background:var(--wine); color:#fff; }
+    .btn-soft{ background:var(--card); color:var(--wine); }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+
+    .card{
+      background:var(--card);
+      padding:14px;
+      border-radius:14px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+
+    .card .tag{
+      display:inline-block;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.08);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:0.85rem;
+      color:var(--wine);
+      font-weight:700;
+      margin-bottom:10px;
+    }
+
+    .highlight{
+      background: linear-gradient(180deg, #fff, var(--card));
+      border:1px solid rgba(0,0,0,0.06);
+      border-radius:14px;
+      padding:14px;
+      margin-top:12px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:14px;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+    }
+
+    footer{
+      background:var(--wine);
+      color:#fff;
+      text-align:center;
+      padding:22px 12px;
+      font-size:0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Logo Mujeres de Oración" class="logo">
+  <h1>Mujeres de Oración</h1>
+  <p>Unidas en fe, oración y sabiduría</p>
+</header>
+
+<main class="container">
+
+  <!-- BIENVENIDA -->
+  <section class="section">
+    <h2>Bienvenida</h2>
+    <p>
+      Hoy nace este espacio creado con amor y fe, un lugar donde mujeres se unen para clamar a Dios,
+      creer en Su poder y descansar en Su presencia 🤍
+    </p>
+    <p>
+      Aquí encontrarás oración, Palabra de Dios, ánimo para el alma y una comunidad de mujeres que oran contigo.
+      Creemos que Dios escucha cada clamor y que la oración de una mujer llena de fe puede mucho.
+    </p>
+
+    <div class="verse">
+      📖 “Clama a mí, y yo te responderé.” — Jeremías 33:3
+    </div>
+
+    <div class="btn-row">
+      <a href="https://www.facebook.com/share/1CPevSvdNX/?mibextid=wwXIfr"
+         class="btn btn-primary"
+         target="_blank"
+         rel="noopener">
+        💬 Contáctanos por Facebook
+      </a>
+
+      <a href="https://www.facebook.com/share/v/1AZiFkSnti/?mibextid=wwXIfr"
+         class="btn btn-soft"
+         target="_blank"
+         rel="noopener">
+        📺 Facebook Live
+      </a>
+    </div>
+
+    <p class="small">*Las peticiones se reciben con respeto y confidencialidad.*</p>
+  </section>
+
+  <!-- MINISTERIO -->
+  <section class="section">
+    <h2>Ministerio de Mujeres de Oración</h2>
+
+    <p>
+      Somos un ministerio comprometido con la intercesión y el acompañamiento espiritual.
+      Nacimos del llamado de Dios a interceder y a permanecer en la brecha por Su pueblo.
+      Somos mujeres consagradas a la oración, sensibles a la voz del Espíritu Santo y
+      comprometidas con llevar la presencia de Dios hasta donde tú estés.
+    </p>
+
+    <p>
+      A través de capellanes capacitadas y guiadas por el amor de Cristo, acudimos a hogares,
+      hospitales y momentos de crisis, duelo o decisiones importantes, para orar, escuchar
+      y ministrar sanidad, restauración y esperanza.
+    </p>
+
+    <div class="highlight">
+      <strong>Vamos hasta donde tú estés.</strong><br><br>
+      Mujeres llamadas a interceder, capellanes ungidas para orar, escuchar y ministrar
+      la presencia de Dios en cada necesidad.
+      <p class="small" style="margin-top:10px;">
+        📍 Hogares | Hospitales | Momentos de crisis<br>
+        🙏 Estamos para orar contigo y por ti.
+      </p>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section class="section">
+    <h2>Actividades Semanales</h2>
+
+    <div class="grid">
+      <div class="card">
+        <div class="tag">📖 Miércoles</div>
+        Estudio Bíblico Online<br>
+        <strong>“Mujeres de Oración y Sabias”</strong>
+      </div>
+
+      <div class="card">
+        <div class="tag">🙏 Jueves</div>
+        Oración de Madrugada<br>
+        <strong>5:00 a.m. (Online)</strong>
+      </div>
+
+      <div class="card">
+        <div class="tag">🌍 Viernes</div>
+        Wise Women of Prayer<br>
+        <strong>5:00 a.m. (English)</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS -->
+  <section class="section">
+    <h2>Anuncios y Próximos Encuentros</h2>
+
+    <div class="highlight">
+      📺 <strong>Mujeres de Oración en Vivo</strong><br>
+      Cada tercer jueves del mes — 11:00 a.m.<br>
+      Meditación en la Palabra de Dios y recepción de peticiones de oración.
+    </div>
+
+    <div class="highlight">
+      🔥 <strong>Maratón de Oración</strong><br>
+      24 horas buscando la presencia de Dios en oración e intercesión.
+    </div>
+  </section>
+
+  <!-- COMUNIÓN -->
+  <section class="section">
+    <h2>Momentos de Oración y Comunión</h2>
+    <p class="small">
+      Compartimos como hermanas en la fe, unidas en oración y comunión,
+      fortaleciendo nuestros lazos en la presencia de Dios.
+    </p>
+
+    <div class="gallery">
+      <img src="images/comunion1.jpg" alt="Hermanas en oración">
+      <img src="images/comunion2.jpg" alt="Tiempo de comunión">
+      <img src="images/comunion3.jpg" alt="Momento de oración">
+    </div>
+  </section>
+
+  <!-- TEXTO CLAVE -->
+  <section class="section">
+    <h2>Texto Clave</h2>
+    <div class="verse">
+      📖 <strong>Salmos 5:3</strong><br><br>
+      “Oh Jehová, de mañana oirás mi voz; de mañana me presentaré delante de ti, y esperaré.”
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  🌸 Mujeres de Oración 🌸<br>
+  Restaurando altares para una eternidad
+</footer>
+
+</body>
+</html>
