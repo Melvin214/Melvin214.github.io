@@ -167,13 +167,16 @@
       margin-top:14px;
     }
 
-    .gallery-2 img{
-      width:100%;
-      height:240px;
-      object-fit:cover;
-      border-radius:14px;
-      box-shadow:0 8px 18px rgba(0,0,0,0.08);
-    }
+  .gallery-2 img{
+  width:100%;
+  height:240px;
+  object-fit:contain;          /* shows full photo */
+  background:#faf0f5;          /* soft pink background */
+  padding:8px;
+  border-radius:14px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+
 
     @media (max-width: 560px){
       .gallery-2{
