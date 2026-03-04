@@ -151,15 +151,18 @@
       margin-top:14px;
     }
 
-    .gallery img{
-      width:100%;
-      height:220px;
-      object-fit:cover;
-      border-radius:14px;
-      box-shadow:0 8px 18px rgba(0,0,0,0.08);
-    }
+   .gallery img{
+  width:100%;
+  height:260px;
+  object-fit:contain;
+  background:#faf0f5;
+  padding:8px;
+  border-radius:14px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
 
-    /* ✅ Nueva galería de 2 fotos (siempre se ven “juntas”) */
+
+    /* ✅ 2 photos “together” (no cut faces) */
     .gallery-2{
       display:grid;
       grid-template-columns:repeat(2, minmax(0, 1fr));
@@ -167,21 +170,28 @@
       margin-top:14px;
     }
 
-  .gallery-2 img{
-  width:100%;
-  height:240px;
-  object-fit:contain;          /* shows full photo */
-  background:#faf0f5;          /* soft pink background */
-  padding:8px;
-  border-radius:14px;
-  box-shadow:0 8px 18px rgba(0,0,0,0.08);
-}
+    .gallery-2 img{
+      width:100%;
+      height:260px;
+      object-fit:contain;        /* shows full photo */
+      background:var(--card);
+      padding:10px;
+      border-radius:14px;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+    }
 
+    /* FB embed wrapper */
+    .embed{
+      margin-top:14px;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.08);
+      background:var(--card);
+    }
 
     @media (max-width: 560px){
-      .gallery-2{
-        grid-template-columns:1fr;
-      }
+      .gallery-2{ grid-template-columns:1fr; }
+      .gallery-2 img{ height:auto; }
     }
 
     footer{
@@ -217,26 +227,51 @@
     </p>
 
     <div class="verse">
-      📖 “Clama a mí, y yo te responderé, y te enseñaré cosas grandes y ocultas que tú no conoces..” — Jeremías 33:3
+      📖 “Clama a mí, y yo te responderé, y te enseñaré cosas grandes y ocultas que tú no conoces.” — Jeremías 33:3
     </div>
 
     <div class="btn-row">
       <a href="https://www.facebook.com/profile.php?id=61587863015442"
-         class="btn btn-primary"
-         target="_blank"
-         rel="noopener">
+         class="btn btn-primary" target="_blank" rel="noopener">
         🙏 Enviar petición de oración
       </a>
 
       <a href="https://www.facebook.com/profile.php?id=61587863015442"
-         class="btn btn-soft"
-         target="_blank"
-         rel="noopener">
+         class="btn btn-soft" target="_blank" rel="noopener">
         📺 Facebook Live
       </a>
     </div>
 
     <p class="small">*Las peticiones se reciben con respeto y confidencialidad.*</p>
+  </section>
+
+  <!-- TRANSMISIÓN EN VIVO (OPTION 2 - AUTOMÁTICO) -->
+  <section class="section">
+    <h2>Transmisión en Vivo</h2>
+    <p class="small">
+      Cuando estamos en vivo, podrás ver la transmisión aquí mismo. Si no hay transmisión activa, verás nuestros videos y publicaciones recientes.
+    </p>
+
+    <div class="embed">
+      <iframe
+        title="Facebook Page Mujeres de Oración"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61587863015442&tabs=timeline&width=500&height=650&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+        width="100%"
+        height="650"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+
+    <div class="btn-row">
+      <a href="https://www.facebook.com/profile.php?id=61587863015442"
+         class="btn btn-soft" target="_blank" rel="noopener">
+        📌 Ver en Facebook
+      </a>
+    </div>
   </section>
 
   <!-- MINISTERIO -->
@@ -289,24 +324,73 @@
         Wise Women of Prayer<br>
         <strong>5:00 a.m. (English)</strong>
       </div>
+
+      <div class="card">
+        <div class="tag">🔥 Lunes</div>
+        Intercesión por las necesidades<br>
+        <strong>5:00 a.m. (Online)</strong>
+      </div>
     </div>
   </section>
 
-  <!-- EVENTOS -->
+  <!-- EVENTOS DE MARZO (FLYERS) -->
   <section class="section">
-    <h2>Anuncios y Próximos Encuentros</h2>
+    <h2>Eventos de Marzo</h2>
+    <p class="small">Un mes especial buscando la presencia de Dios en oración, ayuno y comunión espiritual.</p>
 
-    <div class="highlight">
-      📺 <strong>Mujeres de Oración en Vivo</strong><br>
-      Cada tercer jueves del mes — 11:00 a.m.<br>
-      Meditación en la Palabra de Dios y recepción de peticiones de oración.
+    <div class="gallery">
+      <!-- ✅ Sube tus flyers a /images con estos nombres (o cámbialos aquí) -->
+      <img src="images/evento_marzo_1.jpg" alt="Evento de Marzo 1">
+      <img src="images/evento_marzo_2.jpg" alt="Evento de Marzo 2">
+      <img src="images/evento_marzo_3.jpg" alt="Evento de Marzo 3">
+      <img src="images/evento_marzo_4.jpg" alt="Evento de Marzo 4">
+      <img src="images/evento_marzo_5.jpg" alt="Evento de Marzo 5">
     </div>
 
-    <div class="highlight">
-      🔥 <strong>Maratón de Oración</strong><br>
-      24 horas buscando la presencia de Dios en oración e intercesión.
-    </div>
+    <p class="small" style="margin-top:10px;">
+      *Si deseas participar o enviar una petición, contáctanos por Facebook.*
+    </p>
   </section>
+
+  <!-- MAESTRAS -->
+<section class="section">
+  <h2>Maestras del Estudio Bíblico</h2>
+
+  <p class="small">
+  Mujeres comprometidas con enseñar la Palabra de Dios y edificar la vida espiritual de otras mujeres.
+  </p>
+
+  <!-- MAESTRAS EN ESPAÑOL -->
+  <div class="highlight">
+    <strong>🇪🇸 Enseñanza en Español</strong>
+
+    <div class="gallery">
+
+      <img src="images/maestra_es1.jpg" alt="Maestra estudio bíblico español">
+
+      <img src="images/maestra_es2.jpg" alt="Maestra estudio bíblico español">
+
+      <img src="images/maestra_es3.jpg" alt="Maestra estudio bíblico español">
+
+    </div>
+  </div>
+
+  <!-- MAESTRAS EN INGLÉS -->
+  <div class="highlight" style="margin-top:20px;">
+    <strong>🇺🇸 Teaching in English</strong>
+
+    <div class="gallery">
+
+      <img src="images/maestra_en1.jpg" alt="Bible study teacher English">
+
+      <img src="images/maestra_en2.jpg" alt="Bible study teacher English">
+
+      <img src="images/maestra_en3.jpg" alt="Bible study teacher English">
+
+    </div>
+  </div>
+
+</section>
 
   <!-- COMUNIÓN -->
   <section class="section">
@@ -322,13 +406,11 @@
       <img src="images/comunion3.JPG" alt="Momento de oración">
     </div>
 
-    <!-- ✅ NUEVA SECCIÓN: 2 FOTOS JUNTAS -->
     <div class="highlight" style="margin-top:16px;">
       <strong>Galería de Comunidad</strong><br>
       <span class="small">Dos momentos especiales que queremos compartir.</span>
 
       <div class="gallery-2">
-        <!-- Cambia los nombres si tus archivos se llaman diferente -->
         <img src="images/comunion4.JPG" alt="Momento de oración en comunidad">
         <img src="images/comunion5.JPG" alt="Hermanas unidas en oración">
       </div>
